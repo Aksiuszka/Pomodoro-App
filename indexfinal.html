@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylefinal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@700;900&family=Nunito:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Noto+Serif+Display:wght@700;900&display=swap" rel="stylesheet">  
+<title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div id="background" class="background"></div>
+               <!--Navbar Vertical-->
+			<div class="navigation">
+				<div class="search-bar">
+					<span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+				</div>
+				<div class="navbar">
+					<div class="nav-list">
+						<ul class="menu-bar">
+							<li class="list-bar">
+								<a>
+									<span class="icon"
+										><ion-icon name="newspaper-outline"></ion-icon
+									></span>
+									<span class="name">Link 1</span>
+								</a>
+							</li>
+							<li class="list-bar">
+								<a>
+									<span class="icon"
+										><ion-icon name="newspaper-outline"></ion-icon
+									></span>
+									<span class="name">Link 2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="button">
+					<span class="icon">
+						<ion-icon name="chevron-forward-outline"></ion-icon>
+					</span>
+				</div>
+			</div>
+ <!--Console Watch-->
+ <div class="console_menu">
+    <time class="study-time" id="display"></time>
+    <div class="btn-container">
+        <audio loop class="song">
+            <source src="./assets/campfire-1.mp3"/>
+        </audio>
+        <audio loop class="song2">
+            <source src="./assets/bensound-ofeliasdream.mp3"/>
+        </audio>
+    <button class="btntext" id="resetTime">Zresetuj</button>
+    <button class="btntext" id="playshit">Start</button>
+    <button class="btntext" id="pauseTime">Zatrzymaj</button>
+</div>
+<div class="study-time typo" id="type"></div>
+
+</div>
+<div class="controls_container">
+    <div class="break control">
+        <h2>Przerwa</h2>
+        <div class="button-container">
+            <button class="btn" id="addBreak" value ="1">+</button>
+            <span class="break-time"></span>
+            <button class="btn" id="minusBreak" value ="1">-</button>
+            
+        </div>
+    </div>
+    <div class="session control">
+        <h2>Sesja</h2>
+        <div class="button-container">
+            <button class="btn" id="addSession" value ="1">+</button>
+            <span class="session-time">0</span>
+            <button class="btn" id="minusSession" value ="1">-</button>
+        </div>
+    </div>
+    <div class="focus control">
+        <h2>Skupienie</h2>
+        <div class="button-container">
+            <button class="btn" id="addWork" value ="1">+</button>
+            <span class="work-time"></span>
+            <button class="btn" id="minusWork" value ="1">-</button>	
+        </div>
+    </div>
+</div>
+        </div>   
+        <script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+        <script src="menu.js"></script>
+        <script src="pomidoro.js"></script>
+        <script src="paralaks.js"></script>
+</body>
+</html>
